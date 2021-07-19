@@ -4,7 +4,6 @@
 # 각 행마다 가장 작은 수를 찾은 뒤에 그 중에서 가장 큰 수
 
 n,m = map(int,input().split())
-
 res =0
 
 for i in range(n):

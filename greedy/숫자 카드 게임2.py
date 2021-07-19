@@ -1,7 +1,6 @@
 # 이중 반복문 사용
 
 n,m = map(int,input().split())
-
 res =0
 
 for i in range(n):
