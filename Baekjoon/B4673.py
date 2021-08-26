@@ -17,7 +17,6 @@ for i in range(1, 10001):
     else:
         print(i)
         # cnt = cnt+1
-s
 # print(cnt)
 
 
