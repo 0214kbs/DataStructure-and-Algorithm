@@ -12,9 +12,9 @@ for i in range(1, 10001):
     check.append(n)
 
 for i in range(1, 10001):
-    if i in check:
+    if i in check:  #생성자
         pass
-    else:
+    else: #self number
         print(i)
         # cnt = cnt+1
 # print(cnt)
