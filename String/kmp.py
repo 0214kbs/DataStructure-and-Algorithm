@@ -1,3 +1,6 @@
+str = "abbabbaba"
+pat = "aba"
+failure=[0]*(len(pat)+1)
 # 패턴 실패 함수
 def fail(pat):
     # failure = []
@@ -26,9 +29,7 @@ def pMatch(str, pat):
             j = failure[j-1] + 1
     return (i - len_p) if j == len_p else -1
 
-failure = []
-str = "abbabbaba"
-pat = "aba"
 pMatch(str, pat)
-# a = pMatch(string, pat)
-# print(a)
+
+print(failure)
+print(pMatch(str,pat))
