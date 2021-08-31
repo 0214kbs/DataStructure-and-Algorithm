@@ -29,14 +29,15 @@ while True:
                 push(stack, c)
                 # print(stack)
             elif c in dic.keys():
-                if top(stack) == dic[c] and len(stack)!=0:
+                if top(stack) == dic[c] and len(stack) != 0:
                     # stack.pop()
                     pop(stack)
                     # print(stack)
                 else:
                     if top(stack) == dic.keys():
-                        push(stack,c)
+                        push(stack, c)
                         break
+
         if len(stack) == 0:
             print("yes")
         else:
