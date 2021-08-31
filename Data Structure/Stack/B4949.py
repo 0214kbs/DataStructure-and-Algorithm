@@ -8,7 +8,7 @@ def balance_world(string):
             break
         if c in '({[':
             stack.append(c)
-        elif c in ')}]':
+        elif c in ')}]' and len(stack) != 0:
             stack.pop()
     if len(stack) == 0:
         print("yes")
