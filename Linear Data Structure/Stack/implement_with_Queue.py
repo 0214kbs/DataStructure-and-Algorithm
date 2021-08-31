@@ -18,3 +18,14 @@ class Stack:
 
     def empty(self):
         return len(self.q) == 0
+
+
+stack = Stack()
+stack.push(1)
+stack.push(2)
+print(stack.top())
+stack.pop()
+if stack.empty():
+    print("empty")
+else:
+    print("not empty")
