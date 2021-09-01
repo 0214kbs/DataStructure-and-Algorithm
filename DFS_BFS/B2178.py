@@ -22,11 +22,10 @@ def bfs(x, y):
             ny = y + dy[i]
 
             # nx,ny이 maps 안에 있을때
-            if 0 <= nx < n and 0 <= ny < m:
+            if 0 <= nx < n and 0 <= ny < m and maps[nx][ny] == 1:
                 # maps[nx][ny] == 1 : 길인 곳
-                if maps[nx][ny] == 1:
-                    maps[nx][ny] = maps[x][y] + 1
-                    q.append((nx, ny))
+                maps[nx][ny] = maps[x][y] + 1
+                q.append((nx, ny))
     return maps[n - 1][m - 1]
 
 
