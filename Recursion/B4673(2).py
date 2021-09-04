@@ -2,8 +2,8 @@
 def d(n):
     cnt = n
     while n != 0:
-        cnt = cnt + (n % 10)
-        n = n / 10
+        cnt = cnt + int(n % 10)
+        n = int(n / 10)
     return int(cnt)
 
 cnt = 0
