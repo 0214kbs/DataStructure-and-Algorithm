@@ -20,7 +20,7 @@ def init_tree():
     node = root.right
     node.left = Node("f")
     node.right = Node("g")
-
+    
 
 def PreOrder(node):
     if node is None:
