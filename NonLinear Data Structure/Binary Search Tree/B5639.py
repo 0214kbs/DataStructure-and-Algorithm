@@ -3,7 +3,7 @@ tree = {}
 n = []
 while True:
     try:
-        n.append(input())
+        n.append(int(input()))
     except:
         break
 
