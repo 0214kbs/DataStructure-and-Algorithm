@@ -1,6 +1,8 @@
 import sys
-sys.setrecursionlimit(10*6)
+
+sys.setrecursionlimit(10 * 6)
 input = sys.stdin.readline
+
 
 def postOrder(n):
     length = len(n)
