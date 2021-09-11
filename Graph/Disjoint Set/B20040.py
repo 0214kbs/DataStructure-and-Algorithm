@@ -6,7 +6,7 @@ input = sys.stdin.readline
 def find(a):
     if parent[a] == a:
         return a
-    else:
+    else:# 각 노드의 부모 노드를 찾아감 -> 재귀
         parent[a] = find(parent[a])
         return parent[a]
 
