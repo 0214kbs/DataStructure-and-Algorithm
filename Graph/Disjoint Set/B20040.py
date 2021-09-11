@@ -1,4 +1,8 @@
-# need to understand
+import sys
+sys.setrecursionlimit(10**6)
+input = sys.stdin.readline
+
+
 def find(a):
     if parent[a] == a:
         return a
@@ -18,21 +22,21 @@ def union(i, j):
     # elif a < b:
     else:
         parent[a] = b
-    # else: else일때는 언제?
+    # else:
     #     b += 1
     #     parent[a] = b
 
 
 n, m = map(int, input().split())
 parent = [i for i in range(n)]
-cnt = 0
+isprint = 0
 for i in range(m):
     a, b = map(int, input().split())
     if find(a) == find(b):
         print(i + 1)
-        cnt = 1
+        isprint = 1
         break
     union(a, b)
 
-if cnt == 0:
+if isprint == 0:
     print('0')
