@@ -8,7 +8,7 @@ def Quick_Sort(arr):
 
     def partition(low, high):
         pivot = arr[(low + high) // 2]
-        print(pivot)
+        # print(pivot)
         while low <= high:
             while arr[low] < pivot:
                 low += 1
@@ -25,5 +25,5 @@ def Quick_Sort(arr):
     return sort(0, len(arr) - 1)
 
 
-array = [3, 7, 2, 5, 1, 4, 6]
+array = [3, 4, 2, 5, 1, 7, 6]
 Quick_Sort(array)
