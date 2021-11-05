@@ -7,14 +7,6 @@ def lcm(m, n):
 
 
 # def calendar(M,N,x,y):
-#     for k in range(1, maxK + 1):
-#         val_x = k % M
-#         val_y = k % N
-#         if val_x == x and val_y == y:
-#             return k
-#     return -1
-
-
     # maxI = maxK//M
     # for i in range(maxI):
     #     k = x+M*i
