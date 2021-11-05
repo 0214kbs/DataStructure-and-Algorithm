@@ -19,6 +19,7 @@ def bfs():
         dslr = DSLR(x)
         if x == B:
             print(y)
+            return
         if not visited[dslr[0]]:
             visited[dslr[0]] = True
             q.append([dslr[0], y + 'D'])
@@ -31,7 +32,7 @@ def bfs():
         if not visited[dslr[3]]:
             visited[dslr[3]] = True
             q.append([dslr[3], y + 'R'])
-
+        # print(q)
 
 input = sys.stdin.readline
 T = int(input())
