@@ -43,11 +43,10 @@ cnt = 0
 
 for i in range(n + m):
     # input을 그대로 사용하면 "TypeError 'builtin_function_or_method' object is not iterable" 에러 발생
-    string = input().rstrip()  # 따라서 뒤 공백문자 제거해주어야함
-
+    string = str(input())
     if i < n:
         trie.insert(string)
     else:
-        if trie.search(string):
+        if trie.search(string): #true
             cnt += 1
 print(cnt)
